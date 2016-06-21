@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CA5-OV-f4k">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="13z-14-rT7">
+            <objects>
+                <tableViewController storyboardIdentifier="FibonacciViewController" id="I7E-rN-w63" customClass="FibonacciViewController" customModule="Fibonacci" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="81" sectionHeaderHeight="28" sectionFooterHeight="28" id="OdE-1H-NmM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" selectionStyle="default" indentationWidth="10" reuseIdentifier="FibonacciCellIdentifier" id="glv-gN-AY0" customClass="FibonacciViewCell" customModule="Fibonacci" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="81"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="glv-gN-AY0" id="aQX-b2-cYl">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="80.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第x位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txP-yx-S0X">
+                                            <rect key="frame" x="15" y="15" width="40.5" height="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="18" id="ieL-4K-4uX"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="斐波那契数列" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brf-Pe-Z0s">
+                                            <rect key="frame" x="15" y="48" width="96" height="17.5"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="txP-yx-S0X" firstAttribute="top" secondItem="aQX-b2-cYl" secondAttribute="top" constant="15" id="4hC-Uh-Yeo"/>
+                                        <constraint firstItem="brf-Pe-Z0s" firstAttribute="top" secondItem="txP-yx-S0X" secondAttribute="bottom" constant="15" id="5bz-aC-8BI"/>
+                                        <constraint firstItem="brf-Pe-Z0s" firstAttribute="leading" secondItem="aQX-b2-cYl" secondAttribute="leading" constant="15" id="C8N-Ap-FSI"/>
+                                        <constraint firstAttribute="bottom" secondItem="brf-Pe-Z0s" secondAttribute="bottom" constant="15" id="OyL-mV-Iqi"/>
+                                        <constraint firstItem="txP-yx-S0X" firstAttribute="leading" secondItem="aQX-b2-cYl" secondAttribute="leading" constant="15" id="ioL-A8-Wc6"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="fibonacciValueLabel" destination="brf-Pe-Z0s" id="1zR-Rc-eEa"/>
+                                    <outlet property="indexLabel" destination="txP-yx-S0X" id="lAG-TL-qiR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="I7E-rN-w63" id="4cs-9B-spF"/>
+                            <outlet property="delegate" destination="I7E-rN-w63" id="FiF-8a-cFM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="7WJ-ez-2pm"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZSV-fP-lDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="240"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AOn-l9-Pgb">
+            <objects>
+                <navigationController id="CA5-OV-f4k" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oUW-9n-2BA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="I7E-rN-w63" kind="relationship" relationship="rootViewController" id="OBw-1s-4Fh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pHy-3V-NKU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-670" y="240"/>
+        </scene>
+    </scenes>
+</document>

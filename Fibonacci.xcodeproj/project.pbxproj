@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41082B071D1938FF006188B5 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 41082AFC1D1938FF006188B5 /* FMDatabase.m */; };
+		41082B081D1938FF006188B5 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 41082AFE1D1938FF006188B5 /* FMDatabaseAdditions.m */; };
+		41082B091D1938FF006188B5 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 41082B001D1938FF006188B5 /* FMDatabasePool.m */; };
+		41082B0A1D1938FF006188B5 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 41082B021D1938FF006188B5 /* FMDatabaseQueue.m */; };
+		41082B0B1D1938FF006188B5 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 41082B051D1938FF006188B5 /* FMResultSet.m */; };
+		41082B0C1D1938FF006188B5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41082B061D1938FF006188B5 /* Info.plist */; };
+		41082B0E1D193935006188B5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 41082B0D1D193935006188B5 /* libsqlite3.tbd */; };
+		41082B111D19396D006188B5 /* String+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41082B101D19396D006188B5 /* String+Category.swift */; };
+		41082B161D193B1E006188B5 /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41082B151D193B1E006188B5 /* SQLiteManager.swift */; };
+		41297D8C1D183D3900B36BCB /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 41297D601D183D3900B36BCB /* MJRefreshAutoFooter.m */; };
+		41297D8D1D183D3900B36BCB /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 41297D621D183D3900B36BCB /* MJRefreshBackFooter.m */; };
+		41297D8E1D183D3900B36BCB /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 41297D641D183D3900B36BCB /* MJRefreshComponent.m */; };
+		41297D8F1D183D3900B36BCB /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 41297D661D183D3900B36BCB /* MJRefreshFooter.m */; };
+		41297D901D183D3900B36BCB /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 41297D681D183D3900B36BCB /* MJRefreshHeader.m */; };
+		41297D911D183D3900B36BCB /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 41297D6B1D183D3900B36BCB /* MJRefreshAutoGifFooter.m */; };
+		41297D921D183D3900B36BCB /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 41297D6D1D183D3900B36BCB /* MJRefreshAutoNormalFooter.m */; };
+		41297D931D183D3900B36BCB /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 41297D6F1D183D3900B36BCB /* MJRefreshAutoStateFooter.m */; };
+		41297D941D183D3900B36BCB /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 41297D721D183D3900B36BCB /* MJRefreshBackGifFooter.m */; };
+		41297D951D183D3900B36BCB /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 41297D741D183D3900B36BCB /* MJRefreshBackNormalFooter.m */; };
+		41297D961D183D3900B36BCB /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 41297D761D183D3900B36BCB /* MJRefreshBackStateFooter.m */; };
+		41297D971D183D3900B36BCB /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 41297D7A1D183D3900B36BCB /* MJRefreshGifHeader.m */; };
+		41297D981D183D3900B36BCB /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 41297D7C1D183D3900B36BCB /* MJRefreshNormalHeader.m */; };
+		41297D991D183D3900B36BCB /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 41297D7E1D183D3900B36BCB /* MJRefreshStateHeader.m */; };
+		41297D9A1D183D3900B36BCB /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 41297D811D183D3900B36BCB /* MJRefresh.bundle */; };
+		41297D9B1D183D3900B36BCB /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 41297D841D183D3900B36BCB /* MJRefreshConst.m */; };
+		41297D9C1D183D3900B36BCB /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 41297D861D183D3900B36BCB /* UIScrollView+MJExtension.m */; };
+		41297D9D1D183D3900B36BCB /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 41297D881D183D3900B36BCB /* UIScrollView+MJRefresh.m */; };
+		41297D9E1D183D3900B36BCB /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 41297D8A1D183D3900B36BCB /* UIView+MJExtension.m */; };
+		412B3FA61D18387A00A88EFF /* FibonacciViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B3FA51D18387A00A88EFF /* FibonacciViewController.swift */; };
+		412B3FA81D1838A400A88EFF /* FibonacciViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412B3FA71D1838A400A88EFF /* FibonacciViewCell.swift */; };
+		4164529D1D17DF6700E5C3D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4164529C1D17DF6700E5C3D9 /* AppDelegate.swift */; };
+		416452A21D17DF6700E5C3D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 416452A01D17DF6700E5C3D9 /* Main.storyboard */; };
+		416452A41D17DF6700E5C3D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 416452A31D17DF6700E5C3D9 /* Assets.xcassets */; };
+		416452A71D17DF6700E5C3D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 416452A51D17DF6700E5C3D9 /* LaunchScreen.storyboard */; };
+		416452B21D17DF6700E5C3D9 /* FibonacciTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416452B11D17DF6700E5C3D9 /* FibonacciTests.swift */; };
+		416452BD1D17DF6700E5C3D9 /* FibonacciUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416452BC1D17DF6700E5C3D9 /* FibonacciUITests.swift */; };
+		416452CC1D17E1D300E5C3D9 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416452CB1D17E1D300E5C3D9 /* Fibonacci.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		416452AE1D17DF6700E5C3D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 416452911D17DF6700E5C3D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 416452981D17DF6700E5C3D9;
+			remoteInfo = Fibonacci;
+		};
+		416452B91D17DF6700E5C3D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 416452911D17DF6700E5C3D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 416452981D17DF6700E5C3D9;
+			remoteInfo = Fibonacci;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41082AFB1D1938FF006188B5 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		41082AFC1D1938FF006188B5 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		41082AFD1D1938FF006188B5 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		41082AFE1D1938FF006188B5 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		41082AFF1D1938FF006188B5 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		41082B001D1938FF006188B5 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		41082B011D1938FF006188B5 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		41082B021D1938FF006188B5 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		41082B031D1938FF006188B5 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		41082B041D1938FF006188B5 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		41082B051D1938FF006188B5 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		41082B061D1938FF006188B5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41082B0D1D193935006188B5 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		41082B101D19396D006188B5 /* String+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Category.swift"; sourceTree = "<group>"; };
+		41082B151D193B1E006188B5 /* SQLiteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
+		41297D5F1D183D3900B36BCB /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
+		41297D601D183D3900B36BCB /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
+		41297D611D183D3900B36BCB /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
+		41297D621D183D3900B36BCB /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackFooter.m; sourceTree = "<group>"; };
+		41297D631D183D3900B36BCB /* MJRefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshComponent.h; sourceTree = "<group>"; };
+		41297D641D183D3900B36BCB /* MJRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshComponent.m; sourceTree = "<group>"; };
+		41297D651D183D3900B36BCB /* MJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooter.h; sourceTree = "<group>"; };
+		41297D661D183D3900B36BCB /* MJRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooter.m; sourceTree = "<group>"; };
+		41297D671D183D3900B36BCB /* MJRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeader.h; sourceTree = "<group>"; };
+		41297D681D183D3900B36BCB /* MJRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeader.m; sourceTree = "<group>"; };
+		41297D6A1D183D3900B36BCB /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
+		41297D6B1D183D3900B36BCB /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
+		41297D6C1D183D3900B36BCB /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
+		41297D6D1D183D3900B36BCB /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
+		41297D6E1D183D3900B36BCB /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
+		41297D6F1D183D3900B36BCB /* MJRefreshAutoStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoStateFooter.m; sourceTree = "<group>"; };
+		41297D711D183D3900B36BCB /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
+		41297D721D183D3900B36BCB /* MJRefreshBackGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackGifFooter.m; sourceTree = "<group>"; };
+		41297D731D183D3900B36BCB /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
+		41297D741D183D3900B36BCB /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
+		41297D751D183D3900B36BCB /* MJRefreshBackStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackStateFooter.h; sourceTree = "<group>"; };
+		41297D761D183D3900B36BCB /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
+		41297D791D183D3900B36BCB /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshGifHeader.h; sourceTree = "<group>"; };
+		41297D7A1D183D3900B36BCB /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshGifHeader.m; sourceTree = "<group>"; };
+		41297D7B1D183D3900B36BCB /* MJRefreshNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshNormalHeader.h; sourceTree = "<group>"; };
+		41297D7C1D183D3900B36BCB /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshNormalHeader.m; sourceTree = "<group>"; };
+		41297D7D1D183D3900B36BCB /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshStateHeader.h; sourceTree = "<group>"; };
+		41297D7E1D183D3900B36BCB /* MJRefreshStateHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshStateHeader.m; sourceTree = "<group>"; };
+		41297D811D183D3900B36BCB /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		41297D821D183D3900B36BCB /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		41297D831D183D3900B36BCB /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
+		41297D841D183D3900B36BCB /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
+		41297D851D183D3900B36BCB /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		41297D861D183D3900B36BCB /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
+		41297D871D183D3900B36BCB /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		41297D881D183D3900B36BCB /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		41297D891D183D3900B36BCB /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
+		41297D8A1D183D3900B36BCB /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		41297DA21D183DDA00B36BCB /* OC-BRIDGE-SWIFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OC-BRIDGE-SWIFT.h"; sourceTree = "<group>"; };
+		412B3FA51D18387A00A88EFF /* FibonacciViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciViewController.swift; sourceTree = "<group>"; };
+		412B3FA71D1838A400A88EFF /* FibonacciViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciViewCell.swift; sourceTree = "<group>"; };
+		416452991D17DF6700E5C3D9 /* Fibonacci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fibonacci.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4164529C1D17DF6700E5C3D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		416452A11D17DF6700E5C3D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		416452A31D17DF6700E5C3D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		416452A61D17DF6700E5C3D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		416452A81D17DF6700E5C3D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		416452AD1D17DF6700E5C3D9 /* FibonacciTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FibonacciTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		416452B11D17DF6700E5C3D9 /* FibonacciTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciTests.swift; sourceTree = "<group>"; };
+		416452B31D17DF6700E5C3D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		416452B81D17DF6700E5C3D9 /* FibonacciUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FibonacciUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		416452BC1D17DF6700E5C3D9 /* FibonacciUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciUITests.swift; sourceTree = "<group>"; };
+		416452BE1D17DF6700E5C3D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		416452CB1D17E1D300E5C3D9 /* Fibonacci.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		416452961D17DF6700E5C3D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41082B0E1D193935006188B5 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		416452AA1D17DF6700E5C3D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		416452B51D17DF6700E5C3D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41082AFA1D1938FF006188B5 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				41082AFB1D1938FF006188B5 /* FMDatabase.h */,
+				41082AFC1D1938FF006188B5 /* FMDatabase.m */,
+				41082AFD1D1938FF006188B5 /* FMDatabaseAdditions.h */,
+				41082AFE1D1938FF006188B5 /* FMDatabaseAdditions.m */,
+				41082AFF1D1938FF006188B5 /* FMDatabasePool.h */,
+				41082B001D1938FF006188B5 /* FMDatabasePool.m */,
+				41082B011D1938FF006188B5 /* FMDatabaseQueue.h */,
+				41082B021D1938FF006188B5 /* FMDatabaseQueue.m */,
+				41082B031D1938FF006188B5 /* FMDB.h */,
+				41082B041D1938FF006188B5 /* FMResultSet.h */,
+				41082B051D1938FF006188B5 /* FMResultSet.m */,
+				41082B061D1938FF006188B5 /* Info.plist */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		41082B0F1D193961006188B5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				41082B101D19396D006188B5 /* String+Category.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		41082B121D19397A006188B5 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				41082AFA1D1938FF006188B5 /* fmdb */,
+				41297D8B1D183D3900B36BCB /* MJRefresh */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		41082B131D1939B1006188B5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				412B3FA51D18387A00A88EFF /* FibonacciViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		41082B141D1939D2006188B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				416452A01D17DF6700E5C3D9 /* Main.storyboard */,
+				412B3FA71D1838A400A88EFF /* FibonacciViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		41297D691D183D3900B36BCB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				41297D5F1D183D3900B36BCB /* MJRefreshAutoFooter.h */,
+				41297D601D183D3900B36BCB /* MJRefreshAutoFooter.m */,
+				41297D611D183D3900B36BCB /* MJRefreshBackFooter.h */,
+				41297D621D183D3900B36BCB /* MJRefreshBackFooter.m */,
+				41297D631D183D3900B36BCB /* MJRefreshComponent.h */,
+				41297D641D183D3900B36BCB /* MJRefreshComponent.m */,
+				41297D651D183D3900B36BCB /* MJRefreshFooter.h */,
+				41297D661D183D3900B36BCB /* MJRefreshFooter.m */,
+				41297D671D183D3900B36BCB /* MJRefreshHeader.h */,
+				41297D681D183D3900B36BCB /* MJRefreshHeader.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		41297D701D183D3900B36BCB /* Auto */ = {
+			isa = PBXGroup;
+			children = (
+				41297D6A1D183D3900B36BCB /* MJRefreshAutoGifFooter.h */,
+				41297D6B1D183D3900B36BCB /* MJRefreshAutoGifFooter.m */,
+				41297D6C1D183D3900B36BCB /* MJRefreshAutoNormalFooter.h */,
+				41297D6D1D183D3900B36BCB /* MJRefreshAutoNormalFooter.m */,
+				41297D6E1D183D3900B36BCB /* MJRefreshAutoStateFooter.h */,
+				41297D6F1D183D3900B36BCB /* MJRefreshAutoStateFooter.m */,
+			);
+			path = Auto;
+			sourceTree = "<group>";
+		};
+		41297D771D183D3900B36BCB /* Back */ = {
+			isa = PBXGroup;
+			children = (
+				41297D711D183D3900B36BCB /* MJRefreshBackGifFooter.h */,
+				41297D721D183D3900B36BCB /* MJRefreshBackGifFooter.m */,
+				41297D731D183D3900B36BCB /* MJRefreshBackNormalFooter.h */,
+				41297D741D183D3900B36BCB /* MJRefreshBackNormalFooter.m */,
+				41297D751D183D3900B36BCB /* MJRefreshBackStateFooter.h */,
+				41297D761D183D3900B36BCB /* MJRefreshBackStateFooter.m */,
+			);
+			path = Back;
+			sourceTree = "<group>";
+		};
+		41297D781D183D3900B36BCB /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				41297D701D183D3900B36BCB /* Auto */,
+				41297D771D183D3900B36BCB /* Back */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		41297D7F1D183D3900B36BCB /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				41297D791D183D3900B36BCB /* MJRefreshGifHeader.h */,
+				41297D7A1D183D3900B36BCB /* MJRefreshGifHeader.m */,
+				41297D7B1D183D3900B36BCB /* MJRefreshNormalHeader.h */,
+				41297D7C1D183D3900B36BCB /* MJRefreshNormalHeader.m */,
+				41297D7D1D183D3900B36BCB /* MJRefreshStateHeader.h */,
+				41297D7E1D183D3900B36BCB /* MJRefreshStateHeader.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		41297D801D183D3900B36BCB /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				41297D781D183D3900B36BCB /* Footer */,
+				41297D7F1D183D3900B36BCB /* Header */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		41297D8B1D183D3900B36BCB /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				41297D691D183D3900B36BCB /* Base */,
+				41297D801D183D3900B36BCB /* Custom */,
+				41297D811D183D3900B36BCB /* MJRefresh.bundle */,
+				41297D821D183D3900B36BCB /* MJRefresh.h */,
+				41297D831D183D3900B36BCB /* MJRefreshConst.h */,
+				41297D841D183D3900B36BCB /* MJRefreshConst.m */,
+				41297D851D183D3900B36BCB /* UIScrollView+MJExtension.h */,
+				41297D861D183D3900B36BCB /* UIScrollView+MJExtension.m */,
+				41297D871D183D3900B36BCB /* UIScrollView+MJRefresh.h */,
+				41297D881D183D3900B36BCB /* UIScrollView+MJRefresh.m */,
+				41297D891D183D3900B36BCB /* UIView+MJExtension.h */,
+				41297D8A1D183D3900B36BCB /* UIView+MJExtension.m */,
+			);
+			name = MJRefresh;
+			path = "../../../公司项目/Other/泛爱众/FAZEducation/FAZEducation/MJRefresh";
+			sourceTree = "<group>";
+		};
+		416452901D17DF6700E5C3D9 = {
+			isa = PBXGroup;
+			children = (
+				41082B0D1D193935006188B5 /* libsqlite3.tbd */,
+				4164529B1D17DF6700E5C3D9 /* Fibonacci */,
+				416452B01D17DF6700E5C3D9 /* FibonacciTests */,
+				416452BB1D17DF6700E5C3D9 /* FibonacciUITests */,
+				4164529A1D17DF6700E5C3D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4164529A1D17DF6700E5C3D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				416452991D17DF6700E5C3D9 /* Fibonacci.app */,
+				416452AD1D17DF6700E5C3D9 /* FibonacciTests.xctest */,
+				416452B81D17DF6700E5C3D9 /* FibonacciUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4164529B1D17DF6700E5C3D9 /* Fibonacci */ = {
+			isa = PBXGroup;
+			children = (
+				41297DA21D183DDA00B36BCB /* OC-BRIDGE-SWIFT.h */,
+				4164529C1D17DF6700E5C3D9 /* AppDelegate.swift */,
+				416452CA1D17E1A400E5C3D9 /* Model */,
+				41082B141D1939D2006188B5 /* View */,
+				41082B131D1939B1006188B5 /* Controller */,
+				41082B121D19397A006188B5 /* Vendor */,
+				41082B0F1D193961006188B5 /* Extension */,
+				416452A31D17DF6700E5C3D9 /* Assets.xcassets */,
+				416452A51D17DF6700E5C3D9 /* LaunchScreen.storyboard */,
+				416452A81D17DF6700E5C3D9 /* Info.plist */,
+			);
+			path = Fibonacci;
+			sourceTree = "<group>";
+		};
+		416452B01D17DF6700E5C3D9 /* FibonacciTests */ = {
+			isa = PBXGroup;
+			children = (
+				416452B11D17DF6700E5C3D9 /* FibonacciTests.swift */,
+				416452B31D17DF6700E5C3D9 /* Info.plist */,
+			);
+			path = FibonacciTests;
+			sourceTree = "<group>";
+		};
+		416452BB1D17DF6700E5C3D9 /* FibonacciUITests */ = {
+			isa = PBXGroup;
+			children = (
+				416452BC1D17DF6700E5C3D9 /* FibonacciUITests.swift */,
+				416452BE1D17DF6700E5C3D9 /* Info.plist */,
+			);
+			path = FibonacciUITests;
+			sourceTree = "<group>";
+		};
+		416452CA1D17E1A400E5C3D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				416452CB1D17E1D300E5C3D9 /* Fibonacci.swift */,
+				41082B151D193B1E006188B5 /* SQLiteManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		416452981D17DF6700E5C3D9 /* Fibonacci */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 416452C11D17DF6700E5C3D9 /* Build configuration list for PBXNativeTarget "Fibonacci" */;
+			buildPhases = (
+				416452951D17DF6700E5C3D9 /* Sources */,
+				416452961D17DF6700E5C3D9 /* Frameworks */,
+				416452971D17DF6700E5C3D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fibonacci;
+			productName = Fibonacci;
+			productReference = 416452991D17DF6700E5C3D9 /* Fibonacci.app */;
+			productType = "com.apple.product-type.application";
+		};
+		416452AC1D17DF6700E5C3D9 /* FibonacciTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 416452C41D17DF6700E5C3D9 /* Build configuration list for PBXNativeTarget "FibonacciTests" */;
+			buildPhases = (
+				416452A91D17DF6700E5C3D9 /* Sources */,
+				416452AA1D17DF6700E5C3D9 /* Frameworks */,
+				416452AB1D17DF6700E5C3D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				416452AF1D17DF6700E5C3D9 /* PBXTargetDependency */,
+			);
+			name = FibonacciTests;
+			productName = FibonacciTests;
+			productReference = 416452AD1D17DF6700E5C3D9 /* FibonacciTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		416452B71D17DF6700E5C3D9 /* FibonacciUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 416452C71D17DF6700E5C3D9 /* Build configuration list for PBXNativeTarget "FibonacciUITests" */;
+			buildPhases = (
+				416452B41D17DF6700E5C3D9 /* Sources */,
+				416452B51D17DF6700E5C3D9 /* Frameworks */,
+				416452B61D17DF6700E5C3D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				416452BA1D17DF6700E5C3D9 /* PBXTargetDependency */,
+			);
+			name = FibonacciUITests;
+			productName = FibonacciUITests;
+			productReference = 416452B81D17DF6700E5C3D9 /* FibonacciUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		416452911D17DF6700E5C3D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = art;
+				TargetAttributes = {
+					416452981D17DF6700E5C3D9 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					416452AC1D17DF6700E5C3D9 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 416452981D17DF6700E5C3D9;
+					};
+					416452B71D17DF6700E5C3D9 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 416452981D17DF6700E5C3D9;
+					};
+				};
+			};
+			buildConfigurationList = 416452941D17DF6700E5C3D9 /* Build configuration list for PBXProject "Fibonacci" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 416452901D17DF6700E5C3D9;
+			productRefGroup = 4164529A1D17DF6700E5C3D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				416452981D17DF6700E5C3D9 /* Fibonacci */,
+				416452AC1D17DF6700E5C3D9 /* FibonacciTests */,
+				416452B71D17DF6700E5C3D9 /* FibonacciUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		416452971D17DF6700E5C3D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				416452A71D17DF6700E5C3D9 /* LaunchScreen.storyboard in Resources */,
+				416452A41D17DF6700E5C3D9 /* Assets.xcassets in Resources */,
+				41297D9A1D183D3900B36BCB /* MJRefresh.bundle in Resources */,
+				41082B0C1D1938FF006188B5 /* Info.plist in Resources */,
+				416452A21D17DF6700E5C3D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		416452AB1D17DF6700E5C3D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		416452B61D17DF6700E5C3D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		416452951D17DF6700E5C3D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41082B111D19396D006188B5 /* String+Category.swift in Sources */,
+				41297D981D183D3900B36BCB /* MJRefreshNormalHeader.m in Sources */,
+				41297D991D183D3900B36BCB /* MJRefreshStateHeader.m in Sources */,
+				41082B0B1D1938FF006188B5 /* FMResultSet.m in Sources */,
+				41297D971D183D3900B36BCB /* MJRefreshGifHeader.m in Sources */,
+				41297D9E1D183D3900B36BCB /* UIView+MJExtension.m in Sources */,
+				41082B081D1938FF006188B5 /* FMDatabaseAdditions.m in Sources */,
+				41297D951D183D3900B36BCB /* MJRefreshBackNormalFooter.m in Sources */,
+				41297D9B1D183D3900B36BCB /* MJRefreshConst.m in Sources */,
+				41297D8E1D183D3900B36BCB /* MJRefreshComponent.m in Sources */,
+				41297D911D183D3900B36BCB /* MJRefreshAutoGifFooter.m in Sources */,
+				41297D8D1D183D3900B36BCB /* MJRefreshBackFooter.m in Sources */,
+				41297D9C1D183D3900B36BCB /* UIScrollView+MJExtension.m in Sources */,
+				412B3FA61D18387A00A88EFF /* FibonacciViewController.swift in Sources */,
+				41297D921D183D3900B36BCB /* MJRefreshAutoNormalFooter.m in Sources */,
+				41082B161D193B1E006188B5 /* SQLiteManager.swift in Sources */,
+				41297D9D1D183D3900B36BCB /* UIScrollView+MJRefresh.m in Sources */,
+				41082B091D1938FF006188B5 /* FMDatabasePool.m in Sources */,
+				4164529D1D17DF6700E5C3D9 /* AppDelegate.swift in Sources */,
+				41082B071D1938FF006188B5 /* FMDatabase.m in Sources */,
+				41297D941D183D3900B36BCB /* MJRefreshBackGifFooter.m in Sources */,
+				41297D901D183D3900B36BCB /* MJRefreshHeader.m in Sources */,
+				41297D931D183D3900B36BCB /* MJRefreshAutoStateFooter.m in Sources */,
+				41297D8F1D183D3900B36BCB /* MJRefreshFooter.m in Sources */,
+				41297D961D183D3900B36BCB /* MJRefreshBackStateFooter.m in Sources */,
+				412B3FA81D1838A400A88EFF /* FibonacciViewCell.swift in Sources */,
+				41297D8C1D183D3900B36BCB /* MJRefreshAutoFooter.m in Sources */,
+				416452CC1D17E1D300E5C3D9 /* Fibonacci.swift in Sources */,
+				41082B0A1D1938FF006188B5 /* FMDatabaseQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		416452A91D17DF6700E5C3D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				416452B21D17DF6700E5C3D9 /* FibonacciTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		416452B41D17DF6700E5C3D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				416452BD1D17DF6700E5C3D9 /* FibonacciUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		416452AF1D17DF6700E5C3D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 416452981D17DF6700E5C3D9 /* Fibonacci */;
+			targetProxy = 416452AE1D17DF6700E5C3D9 /* PBXContainerItemProxy */;
+		};
+		416452BA1D17DF6700E5C3D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 416452981D17DF6700E5C3D9 /* Fibonacci */;
+			targetProxy = 416452B91D17DF6700E5C3D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		416452A01D17DF6700E5C3D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				416452A11D17DF6700E5C3D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		416452A51D17DF6700E5C3D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				416452A61D17DF6700E5C3D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		416452BF1D17DF6700E5C3D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		416452C01D17DF6700E5C3D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		416452C21D17DF6700E5C3D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Fibonacci/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.art.Fibonacci;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Fibonacci/OC-BRIDGE-SWIFT.h";
+			};
+			name = Debug;
+		};
+		416452C31D17DF6700E5C3D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Fibonacci/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.art.Fibonacci;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Fibonacci/OC-BRIDGE-SWIFT.h";
+			};
+			name = Release;
+		};
+		416452C51D17DF6700E5C3D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FibonacciTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.art.FibonacciTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fibonacci.app/Fibonacci";
+			};
+			name = Debug;
+		};
+		416452C61D17DF6700E5C3D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FibonacciTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.art.FibonacciTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fibonacci.app/Fibonacci";
+			};
+			name = Release;
+		};
+		416452C81D17DF6700E5C3D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FibonacciUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.art.FibonacciUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Fibonacci;
+			};
+			name = Debug;
+		};
+		416452C91D17DF6700E5C3D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FibonacciUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.art.FibonacciUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Fibonacci;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		416452941D17DF6700E5C3D9 /* Build configuration list for PBXProject "Fibonacci" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				416452BF1D17DF6700E5C3D9 /* Debug */,
+				416452C01D17DF6700E5C3D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		416452C11D17DF6700E5C3D9 /* Build configuration list for PBXNativeTarget "Fibonacci" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				416452C21D17DF6700E5C3D9 /* Debug */,
+				416452C31D17DF6700E5C3D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		416452C41D17DF6700E5C3D9 /* Build configuration list for PBXNativeTarget "FibonacciTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				416452C51D17DF6700E5C3D9 /* Debug */,
+				416452C61D17DF6700E5C3D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		416452C71D17DF6700E5C3D9 /* Build configuration list for PBXNativeTarget "FibonacciUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				416452C81D17DF6700E5C3D9 /* Debug */,
+				416452C91D17DF6700E5C3D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 416452911D17DF6700E5C3D9 /* Project object */;
+}
