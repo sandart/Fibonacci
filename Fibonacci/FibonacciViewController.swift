@@ -19,8 +19,8 @@ class FibonacciViewController: UITableViewController {
         super.viewDidLoad()
 
 
-         self.tableView.rowHeight = UITableViewAutomaticDimension;
-         self.tableView.estimatedRowHeight = 81
+        self.tableView.rowHeight = UITableViewAutomaticDimension;
+        self.tableView.estimatedRowHeight = self.tableView.rowHeight
         
         let header =  MJRefreshNormalHeader (refreshingTarget: self, refreshingAction: #selector(FibonacciViewController.loadNewData))
         header.autoChangeAlpha = true
@@ -59,15 +59,15 @@ class FibonacciViewController: UITableViewController {
             cell.indexLabel.text = "第\(indexPath.row+1)项"
             cell.fibonacciValueLabel.text = "斐波那契数 - \(fibonacciSource[indexPath.row])"
         }
-        cell.layoutIfNeeded()
+
 
         return cell
     }
     
     override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-
-         return  UITableViewAutomaticDimension
+     return UITableViewAutomaticDimension
     }
+
     
     
     func loadNewData(){
